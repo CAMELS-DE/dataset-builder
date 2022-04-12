@@ -113,7 +113,7 @@ class RadolanUtility:
                 continue
             
             # save to cache
-            self._timestamp_cache.append(item.timestamp)
+            self._timestamp_cache.append(meta['datetime'])
             self._attribute_cache.append(meta)
             self._dataset_cache.append(ds)
         

@@ -1,0 +1,8 @@
+rasterio
+shapely
+geopandas
+fiona
+wetterdienst
+pyproj
+python-dateutil
+fire

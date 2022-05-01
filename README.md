@@ -1,5 +1,8 @@
 # Dataset-builder
 
+[![Docker Image CI](https://github.com/CAMELS-DE/dataset-builder/actions/workflows/docker.yml/badge.svg)](https://github.com/CAMELS-DE/dataset-builder/actions/workflows/docker.yml)
+[![Upload Python Package](https://github.com/CAMELS-DE/dataset-builder/actions/workflows/pypi_publish.yml/badge.svg)](https://github.com/CAMELS-DE/dataset-builder/actions/workflows/pypi_publish.yml)
+
 still a mess, hold tight!!
 
 Data harvester around wetterdienst. 
@@ -22,7 +25,7 @@ you have to mount three folders to your local harddrive:
  * `/src/input_data` for any input shapefiles, that should be intersected with EZG (soil, landuse)
  * `/src/output_data` for the final dataset. It will create a sub-folder for each feature found in `EZG`
 
- 
+
 run docker container with correct mount-points
 
 ```bash

@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on:
+  push:
+    tags:
+      - 'v*'
+  release:
+    types: [published]
+    
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+    - name: build and push
+      uses: docker/build-push-action@v1
+      with:
+        registry: ghcr.io
+        username: "CAMELS-DE"
+        password: ${{ secrets.PAT }}
+        repository: CAMELS-DE/dataset-builder
+        tags: latest,${{ github.ref_name }}

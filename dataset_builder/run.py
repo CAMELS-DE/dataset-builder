@@ -9,9 +9,9 @@ from dateutil.parser import parse
 from wetterdienst.provider.dwd import observation, radar
 import pandas as pd
 
-from harvest.ezg import EZG
-from harvest.radolan import RadolanUtility
-from harvest.reducers.station import transpose_station_data
+from dataset_builder.ezg import EZG
+from dataset_builder.radolan import RadolanUtility
+from dataset_builder.reducers.station import transpose_station_data
 
 # check if this file is running in a container
 if os.path.exists('./.incontainer'):

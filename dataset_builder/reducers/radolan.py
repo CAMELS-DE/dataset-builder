@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import mode
 
-from harvest.radolan import RadolanUtility
+from dataset_builder.radolan import RadolanUtility
 
 
 def spatial_reduce(radolan_chunks: List[np.ma.MaskedArray], targets: List[str] = 'all', utility: RadolanUtility = None) -> pd.DataFrame:

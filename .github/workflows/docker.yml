@@ -14,10 +14,10 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
     - name: build and push
-      uses: docker/build-push-action@v1
+      uses: docker/build-push-action@v2
       with:
         registry: ghcr.io
         username: "CAMELS-DE"
         password: ${{ secrets.PAT }}
-        repository: CAMELS-DE/dataset-builder
+        repository: camels-de/dataset-builder
         tags: latest,${{ github.ref_name }}

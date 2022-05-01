@@ -132,3 +132,4 @@ dmypy.json
 EZG/*
 temp/*
 input_data/*
+output_data/*
